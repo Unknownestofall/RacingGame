@@ -20,6 +20,11 @@ protected:
 	virtual void BeginPlay() override;
 private:
 	
+	UPROPERTY(EditAnywhere) class UCapsuleComponent* CarCollider;
+	UPROPERTY(EditAnywhere) UStaticMeshComponent* CarWheels;
+	UPROPERTY(EditAnywhere) UStaticMeshComponent* CarBody;
+	UPROPERTY(EditAnywhere) UStaticMeshComponent* CarDoors;
+	UPROPERTY(EditAnywhere) UStaticMeshComponent* CarWindshield;
 
 public:	
 	// Called every frame
