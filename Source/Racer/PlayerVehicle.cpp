@@ -13,6 +13,7 @@ APlayerVehicle::APlayerVehicle() {
 
 	CameraComp = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	CameraComp->SetupAttachment(SpringArm);
+
 }
 void APlayerVehicle::Tick(float DeltaTime)
 {
