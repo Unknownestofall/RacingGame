@@ -2,7 +2,7 @@
 
 
 #include "BaseClass.h"
-#include "Components/CapsuleComponent.h"
+#include "Components/BoxComponent.h"
 
 // Sets default values
 ABaseClass::ABaseClass()
@@ -10,7 +10,7 @@ ABaseClass::ABaseClass()
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
-	CarCollider = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Capsule Collider"));
+	CarCollider = CreateDefaultSubobject<UBoxComponent>(TEXT(" Collider"));
 	RootComponent = CarCollider;
 
 	CarBody = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Car Body"));

@@ -20,7 +20,7 @@ protected:
 	virtual void BeginPlay() override;
 private:
 	
-	UPROPERTY(EditAnywhere) class UCapsuleComponent* CarCollider;
+	UPROPERTY(EditAnywhere) class UBoxComponent* CarCollider;
 	UPROPERTY(EditAnywhere) UStaticMeshComponent* CarWheels;
 	UPROPERTY(EditAnywhere) UStaticMeshComponent* CarBody;
 	UPROPERTY(EditAnywhere) UStaticMeshComponent* CarDoors;
